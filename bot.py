@@ -83,5 +83,8 @@ async def help(ctx):
 async def on_command_error(ctx, error):
     await ctx.send("Invalid arguments")
 
+if __name__=='__main__':
+    import config
+    client.run(config.token)
 
-client.run('NjY5NjMyNTA2MDcyNjYyMDQx.XjjJww.2Ys8t4C5EjUsBO0KjAQQT_26g8o')
+
